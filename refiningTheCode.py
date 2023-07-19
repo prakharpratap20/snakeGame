@@ -14,6 +14,7 @@ offsets = {
     "left": (-20, 0),
     "right": (20, 0)
 }
+
 def bind_direction_keys():
     screen.onkey(lambda: set_snake_direction("up"), "Up")
     screen.onkey(lambda: set_snake_direction("down"), "Down")
@@ -47,8 +48,6 @@ def game_loop():
         or new_head[1] < - HEIGHT / 2 or new_head[1] > HEIGHT / 2:
         reset()
     else:
-        
-    
         # add new head to snake body
         snake.append(new_head)
         

@@ -14,7 +14,6 @@ offsets = {
     "left": (-20, 0),
     "right": (20, 0)
 }
-
 def go_up():
     global snake_direction
     if snake_direction != "down":
@@ -35,7 +34,6 @@ def go_left():
     if snake_direction != "right":
         snake_direction = "left"
 
-
 def game_loop():
     stamper.clearstamps() # remove existing stamps made by stamper
 
@@ -48,8 +46,6 @@ def game_loop():
         or new_head[1] < - HEIGHT / 2 or new_head[1] > HEIGHT / 2:
         reset()
     else:
-        
-    
         # add new head to snake body
         snake.append(new_head)
         
