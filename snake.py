@@ -24,10 +24,8 @@ my_turtle = turtle.Turtle()
 my_turtle.shape("turtle")
 my_turtle.color("blue")
 
-# giving the turtle commands
-my_turtle.forward(100)
-my_turtle.right(90)
-my_turtle.forward(100)
+# set animation in motion
+move_turtle()
 
 # to stop the turtle we will have to use the done method 
 turtle.done()
